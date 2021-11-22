@@ -39,7 +39,8 @@ class Animal:
     def getZona(self):
         return self._zona
 
-    def totalPorTipo(self):
+    @classmethod
+    def totalPorTipo(cls):
         from zooAnimales.anfibio import Anfibio
         from zooAnimales.ave import Ave
         from zooAnimales.mamifero import Mamifero

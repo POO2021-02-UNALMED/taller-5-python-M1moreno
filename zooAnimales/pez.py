@@ -27,17 +27,17 @@ class Pez(Animal):
         return "nadar"
 
     @classmethod
-    def cantidadPeces(self):
+    def cantidadPeces(cls):
         return len(Pez._listado)
 
     @classmethod
-    def crearSalmon(self, nombre, edad, genero):
+    def crearSalmon(cls, nombre, edad, genero):
         Pez.salmones += 1
         salmon = Pez(nombre, edad, "oceano", genero, "rojo", 6)
         return salmon
 
     @classmethod
-    def crearBacalao(self, nombre, edad, genero):
+    def crearBacalao(cls, nombre, edad, genero):
         Pez.bacalaos += 1
         bacalao = Pez(nombre, edad, "oceano", genero, "gris", 6)
         return bacalao
